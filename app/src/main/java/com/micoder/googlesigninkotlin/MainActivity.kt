@@ -1,19 +1,19 @@
 package com.micoder.googlesigninkotlin
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GithubAuthProvider
 import com.google.firebase.auth.GoogleAuthProvider
 import com.micoder.googlesigninkotlin.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,10 +47,18 @@ class MainActivity : AppCompatActivity() {
 
         // Google SignIn Button, Click to begin Google SignIn
         binding.googleSignInBtn.setOnClickListener {
-            // begin Google SignIn
+/*            // begin Google SignIn
             Log.d(TAG, "onCreate: begin Google SignIn")
             val intent = googleSignInClient.signInIntent
-            startActivityForResult(intent, RC_SIGN_IN)
+            startActivityForResult(intent, RC_SIGN_IN)*/
+
+            // clearing previous signin caches
+            googleSignInClient.signOut()
+            //getting the google signin intent
+            val signInIntent = googleSignInClient.signInIntent
+            //starting the activity for result
+            startActivityForResult(signInIntent, RC_SIGN_IN)
+
         }
 
     }
