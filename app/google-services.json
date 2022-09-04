@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "732069180934",
+    "project_id": "signin-kotlin-5b294",
+    "storage_bucket": "signin-kotlin-5b294.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732069180934:android:d46adf7b978d120311f587",
+        "android_client_info": {
+          "package_name": "com.micoder.googlesigninkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732069180934-ur2ub7k0bev0kvseavsli422ce0u0gs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.micoder.googlesigninkotlin",
+            "certificate_hash": "5e91919eda723ab375c8d1cb8abacfcbcdf1201b"
+          }
+        },
+        {
+          "client_id": "732069180934-djcu41c27u6gfscnao9lh0ddfkqbfor0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2KQO7pnlRs8gJhwhJtt1FdPDtzKSUU7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732069180934-djcu41c27u6gfscnao9lh0ddfkqbfor0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
